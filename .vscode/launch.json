@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Magic Telescope Cross Train",
+      "program": "${workspaceFolder}/index.js",
+      "args": [
+        "-L",
+        "knn",
+        "-A",
+        "datasets/magic-telescope-train.arff",
+        "-E",
+        "static",
+        "datasets/magic-telescope-test.arff"
+      ]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Housing Telescope Static Train",
+      "program": "${workspaceFolder}/index.js",
+      "args": [
+        "-L",
+        "knn",
+        "-A",
+        "datasets/housing-train.arff",
+        "-E",
+        "static",
+        "datasets/housing-test.arff"
+      ]
+    }
+  ]
+}
